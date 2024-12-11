@@ -48,18 +48,36 @@ body {
   background-color: #FF603D;
 }
 
+.gray{
+  background-color: #717171;
+}
+
 .arrowDown{
   width: 24px;
 }
 
-.card {
-  border: 0;
-  border-radius: 12px;
-  width: 30%;
-  height: 12.5rem;
+.margin-auto{
+  margin: 0 auto;
 }
 
+.card {
+  display: flex;
+  align-items: start;
+  border: 0;
+  border-radius: 12px;
+  width: 15%;
+  height: 14rem;
+  min-height: 12.5rem;
+  min-width: 10rem;
+}
+
+.mb-gasto{
+  margin-bottom: -.5rem;
+}
 .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -76,4 +94,16 @@ button {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+}
+
+
+@media (max-width: 600px) {
+  .recents{
+    min-width: 90%;
+  }
+
+  .card-conteiner{
+    overflow-x: auto;
+    width: 100%
+  }
 }

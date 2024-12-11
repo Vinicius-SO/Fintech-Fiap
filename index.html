@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="styles.css">
 
   </head>
-  <body class="bg-light">
-      <main class="overflow-x-hidden ">
+  <body class="bg-light ">
+      <main class="">
           <!-- Cabeçalho -->
-          <header class="w-100 m-0 d-flex justify-content-center align-items-center flex-column bg-white rounded-bottom-5 mb-5 pb-4">
+          <header class="w-100 m-0 d-flex justify-content-center align-items-center flex-column bg-white rounded-bottom-5 mb-md-5 mb-3 pb-md-4">
             <container class="text-center">
               <div class="d-flex justify-content-center align-items-center my-4">
                 <h5 class="fs-2 text-muted">Outubro</h5>
@@ -28,7 +28,7 @@
                 <h3 class="text-muted">Saldo: <strong class="fs-1 ml-1">R$ 2.000,00</strong></h3>
             </container>
             <!-- Entradas e Saídas -->
-            <container class="d-flex justify-content-around my-4 gap-5">
+            <container class="d-flex justify-content-around my-4 gap-3 gap-md-5">
               <div class="d-flex align-items-center gap-3">
                 <div class="circle blue"><img src="./assets/arrow.svg" alt="seta para cima"></div>
                   <div class="ml-2">
@@ -46,51 +46,63 @@
             </container>
           </header>
 
-          <content class="w-100 d-flex justify-content-center align-items-center gap-5 h-100">
+          <content class=" w-70 h-100 d-flex justify-content-evenly align-items-center margin-auto flex-column flex-md-row overflow-x-auto">
             <!-- Cartões -->
-            <div class="d-flex gap-4 h-100">
+            <div class="card-conteiner d-flex gap-3 h-100 mb-3 mb-md-0 px-3">
                   <div class="card text-white blue border-0">
-                      <div class="card-body">
-                          <h6 class="card-title">Nubank</h6>
-                          <p class="mb-0">Gasto: R$ 1.000,00</p>
-                          <p>**** 5843</p>
+                      <div class="card-body ">
+                          <h6 class="fs-3 mb-1">Nubank</h6>
+                          <div>
+                            <p class="mb-gasto fs-5">Gasto:</p>
+                            <p class="fs-5">R$ 1.000,00</p>
+                            <p class="fs-5">**** 5843</p>
+                          </div>
                       </div>
                   </div>
             
-                  <div class="card text-white bg-danger">
+                  <div class="card text-white orange">
                       <div class="card-body">
-                          <h6 class="card-title">Inter</h6>
-                          <p class="mb-0">Gasto: R$ 1.000,00</p>
-                          <p>**** 5843</p>
+                          <h6 class=" fs-3 mb-1">Inter</h6>
+                          <div>
+                            <p class="mb-gasto fs-5">Gasto:</p>
+                            <p class="fs-5">R$ 1.000,00</p>
+                            <p class="fs-5">**** 5843</p>
+                          </div>
                       </div>
                   </div>
             
-            
+                  
                   <div class="card text-white bg-warning">
                       <div class="card-body">
-                          <h6 class="card-title">Itau</h6>
-                          <p class="mb-0">Gasto: R$ 1.000,00</p>
-                          <p>**** 5843</p>
+                          <h6 class="fs-3 mb-1">Itau</h6>
+                          <div>
+                            <p class="mb-gasto fs-5">Gasto:</p>
+                            <p class="fs-5">R$ 1.000,00</p>
+                            <p class="fs-5">**** 5843</p>
+                          </div>
                       </div>
                   </div>
             
             </div>
             <!-- Recentes -->
-            <div class="card">
-                <div class="card-body">
-                    <h6>Recentes</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li class="d-flex justify-content-between">
-                            <span>🏠 Aluguel</span>
+            <div class="w-25 w-sm-75 h-auto p-3 bg-white rounded-5 recents overflow-hidden">
+                <div class=" card-body w-100">
+                    <div class="w-100 d-flex text-muted justify-content-between align-items-center mb-4">
+                      <h3 class="text-muted">Recentes</h3>
+                      <img src="./assets/lucide_clock.svg" alt="clock">
+                    </div>
+                    <ul class="list-unstyled mb-0 text-muted">
+                        <li class="d-flex justify-content-between mb-3">
+                            <div class="d-flex gap-3"><div class="circle gray"><img src="./assets/lucide_building-2.svg" alt="building"></div><span>Aluguel</span></div>
                             <span>R$ 1.000,00</span>
                         </li>
-                        <li class="d-flex justify-content-between">
-                            <span>💡 Conta De Luz</span>
-                            <span>R$ 200,00</span>
+                        <li class="d-flex justify-content-between mb-3">
+                          <div class="d-flex gap-3"><div class="circle gray"><img src="./assets/lucide_building-2.svg" alt="building"></div><span>Conta de Luz</span></div>
+                          <span>R$ 1.000,00</span>
                         </li>
-                        <li class="d-flex justify-content-between">
-                            <span>💧 Conta De Água</span>
-                            <span>R$ 100,00</span>
+                        <li class="d-flex justify-content-between mb-3">
+                          <div class="d-flex gap-3"><div class="circle gray"><img src="./assets/lucide_building-2.svg" alt="building"></div><span>Conta de Água</span></div>
+                          <span>R$ 1.000,00</span>
                         </li>
                     </ul>
                 </div>
@@ -98,13 +110,13 @@
           </content>
 
           <!-- Menu inferior -->
-          <!-- <div class="d-flex justify-content-around py-3 mt-4 bg-white position-fixed bottom-0 w-100">
+          <div class="d-flex justify-content-around py-3 mt-4 bg-white position-fixed bottom-0 w-100">
               <button class="btn btn-outline-primary">🏠</button>
               <button class="btn btn-outline-primary">⇅</button>
               <button class="btn btn-primary rounded-circle">+</button>
               <button class="btn btn-outline-primary">⏲️</button>
               <button class="btn btn-outline-primary">👤</button>
-          </div> -->
+          </div>
         </main>
       <!-- Bootstrap JS -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
