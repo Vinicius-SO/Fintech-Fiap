@@ -9,7 +9,8 @@ body {
   width:100vw;
   height: 100vh;
   font-family: "Inria Sans", serif;
-  overflow-x: hidden;
+  overflow: clip;
+  background-color: #EFEFEF;
 }
 
 .circle{
@@ -31,6 +32,7 @@ body {
   rotate: 180deg
 }
 
+
 .text-blue{
   color: #70D4EA;
 }
@@ -46,6 +48,11 @@ body {
 
 .orange{
   background-color: #FF603D;
+}
+
+
+.brown {
+  background-color: #A94B08;
 }
 
 .gray{
