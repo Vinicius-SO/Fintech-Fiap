@@ -1,23 +1,62 @@
 :root{
-  --primary: "#A94B08" 
-  --light-blue: "#70D4EA"
-  --orange: "#FF603D"
+  --primary: #A94B08 
+  --light-blue: #70D4EA
+  --orange: #FF603D
 }
 
 
 body {
+  width:100vw;
+  height: 100vh;
   font-family: "Inria Sans", serif;
+  overflow-x: hidden;
 }
 
-main{
-  width: 100vw
+.circle{
+  width: 27px;
+  height: 27px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%
+
 }
+
+.circle > img{
+  width: 1rem;
+  height: 1rem;
+}
+
+.orange > img{
+  rotate: 180deg
+}
+
+.text-blue{
+  color: #70D4EA;
+}
+
+.text-orange{
+  color: #FF603D;
+}
+
+
+.blue{
+  background-color: #70D4EA;
+}
+
+.orange{
+  background-color: #FF603D;
+}
+
 .arrowDown{
   width: 24px;
 }
 
 .card {
+  border: 0;
   border-radius: 12px;
+  width: 30%;
+  height: 12.5rem;
 }
 
 .card-body {
